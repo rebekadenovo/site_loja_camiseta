@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeka Araujo - Loja de Camisetas</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #3a014d;
+            color: #fe9a68;
+        }
+
+        header {
+            background: linear-gradient(90deg, #591900, #d43c00);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .produtos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        article {
+            background: rgb(250, 236, 211);
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .preco {
+            font-weight: bold;
+            color: #000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+            background: rgb(250, 236, 211);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        input, select, textarea {
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: rgb(42, 0, 37);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #005a21;
+        }
+
+        button:focus, input:focus, select:focus {
+            outline: 2px solid #007bff;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        video {
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #fe9a68;
+            color: rgb(42, 0, 37);
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 600px) {
+            .produtos {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🛍️ Loja de Camisetas 🛍️</h1>
+    <nav>
+        <a href="#">Sobre a loja</a>
+        <a href="#">Nossos Produtos</a>
+        <a href="#">Fale com a gente</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Produtos</h2>
+
+        <div class="produtos">
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_preta_1153_1_df0a998fd7bfd3376d9a84a4e53482aa_20251104171425.jpg" alt="Camiseta preta">
+                <h3>Camiseta Preta</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_branca_1151_1_565df92cf3776e8d70e8b674b5434b4c_20251104171853.jpeg" alt="Camiseta branca">
+                <h3>Camiseta Branca</h3>
+                <p class="preco">R$ 79,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_marrom_cafe_3348_1_9be1498f5d3588c6ffc5062e2fcb88d0_20251104171428.jpg" alt="Camiseta marrom">
+                <h3>Camiseta Marrom</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_verde_army_2541_1_ee4c6c95506ce99fc66a39853fba663b_20251104171854.jpg" alt="Camiseta verde">
+                <h3>Camiseta Verde</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_terracota_2128_1_23ecf97ce292951c57f95228dc985e88_20251104171853.jpg" alt="Camiseta Laranja">
+                <h3>Camiseta Laranja</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+             <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_roxa_3344_1_545d375698001c767bfb9162be829c5b_20251104171428.jpg" alt="Camiseta roxa">
+                <h3>Camiseta Roxa</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+            
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_basica_vermelha_3346_1_d0b6731d0196536973b773da8fd55337_20251104171855.jpg" alt="Camiseta vermelha">
+                <h3>Camiseta Vermelha</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+             <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_bsica_magenta_1_20260218172455_d712a8913a32.jpg" alt="Camiseta rosa">
+                <h3>Camiseta Rosa</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_bsica_cinza_grafite_1_20251104171855_0096ce345321.jpg" alt="Camiseta cinza">
+                <h3>Camiseta Cinza</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+            <article>
+                <img src="https://images.tcdn.com.br/img/img_prod/497460/camiseta_bsica_azul_1_20260206154021_aafcacb8222b.jpg" alt="Camiseta azul">
+                <h3>Camiseta Azul</h3>
+                <p class="preco">R$ 89,90</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Faça seu pedido</h2>
+
+        <form>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho" required>
+                <option value="">Selecione</option>
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+            </select>
+
+            <label for="mensagem">Observações:</label>
+            <textarea id="mensagem"></textarea>
+
+            <button type="submit">Finalizar Pedido</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Sobre nossas camisetas</h2>
+        
+        <video controls width="50%">
+            <source src="C:\Users\Rebeka\OneDrive\Documentos\Faculdade\P4\Atividade_API_01\videos\6006476_4k_Video_Activity_3840x2160.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
+        <video controls width="20%">
+            <source src="C:\Users\Rebeka\OneDrive\Documentos\Faculdade\P4\Atividade_API_01\videos\7317014-uhd_2160_3840_25fps.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Rebeka Araujo</p>
+</footer>
+
+</body>
+</html>
