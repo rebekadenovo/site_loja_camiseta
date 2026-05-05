@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #3a014d;
+    color: #fe9a68;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #591900, #d43c00);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* PRODUTOS */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background: rgb(250, 236, 211);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #000;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: rgb(250, 236, 211);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* BOTÃO */
+button {
+    background: rgb(42, 0, 37);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+footer {
+    background: #fe9a68;
+    color: #2a0025;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}

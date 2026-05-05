@@ -1,0 +1,100 @@
+header {
+    background: var(--cor-header);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+.nav__link {
+    color: white; /* 🔥 mesma cor do título */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    opacity: 0.7;
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.form {
+    max-width: 400px;
+    margin: 0 auto; /* 🔥 centraliza */
+    background: var(--cor-card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background: var(--cor-botao);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background: var(--cor-secundaria);
+    color: #2a0025;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.card {
+    background: var(--cor-card);
+    padding: 15px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--sombra);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+video {
+    width: 100%;
+    max-width: 400px; /* 🔥 controla o tamanho */
+    display: block;
+    margin: 20px auto;
+    border-radius: var(--radius);
+}

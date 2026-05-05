@@ -1,0 +1,10 @@
+:root {
+    --cor-principal: #3a014d;
+    --cor-secundaria: #fe9a68;
+    --cor-header: linear-gradient(90deg, #591900, #d43c00);
+    --cor-card: rgb(250, 236, 211);
+    --cor-botao: rgb(42, 0, 37);
+
+    --radius: 10px;
+    --sombra: 0 4px 10px rgba(0,0,0,0.1);
+}
