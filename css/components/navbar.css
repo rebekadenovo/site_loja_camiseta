@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .navbar__logo {
@@ -23,24 +24,9 @@
     color: white;
 }
 
-.navbar__menu {
-    display: flex;
-    gap: var(--space-6);
-}
-
-.navbar__link {
-    color: white;
-    font-weight: 500;
-    transition: opacity 0.2s;
-}
-
-.navbar__link:hover {
-    opacity: 0.75;
-}
-
-/* Botão hamburger */
+/* As 3 linhas — visíveis em TODOS os tamanhos */
 .navbar__toggle {
-    display: none;
+    display: flex;
     background: none;
     border: none;
     cursor: pointer;
@@ -54,31 +40,45 @@
     width: 24px;
     height: 2px;
     background-color: white;
+    border-radius: 2px;
     transition: all 0.3s;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-    .navbar__toggle {
-        display: flex;
-    }
+/* Menu começa ESCONDIDO sempre */
+.navbar__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--cor-botao);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-4);
+    box-shadow: var(--shadow-md);
+    border-radius: 0 0 var(--radius) var(--radius));
+    min-width: 200px;
+}
 
-    .navbar__menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--cor-botao);
-        flex-direction: column;
-        padding: var(--space-4);
-        gap: var(--space-4);
-        box-shadow: var(--shadow-md);
-    }
+/* Abre só quando JS adiciona a classe */
+.navbar__menu.is-open {
+    display: flex;
+}
 
-    .navbar__menu.is-open {
-        display: flex;
-    }
+.navbar__link {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar__link:last-child {
+    border-bottom: none;
+}
+
+.navbar__link:hover {
+    opacity: 0.75;
 }
 
 /* Scroll */

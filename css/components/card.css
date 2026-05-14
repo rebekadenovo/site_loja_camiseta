@@ -20,7 +20,9 @@
 
 .card--featured .card__img {
     height: 220px;
+    object-fit: cover;
 }
+
 .card__body {
     padding: var(--space-4);
     text-align: center;
