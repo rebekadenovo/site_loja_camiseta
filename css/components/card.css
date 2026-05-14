@@ -15,8 +15,12 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
+    object-position: center top;
 }
 
+.card--featured .card__img {
+    height: 220px;
+}
 .card__body {
     padding: var(--space-4);
     text-align: center;

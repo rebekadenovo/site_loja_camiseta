@@ -1,18 +1,26 @@
-// Hamburger menu
 const toggle = document.querySelector('.navbar__toggle');
 const menu = document.querySelector('.navbar__menu');
 
+// Abre/fecha o menu
 toggle.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', isOpen);
 });
 
-// Fechar com Escape
+// Fecha com Escape
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && menu.classList.contains('is-open')) {
         menu.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', false);
     }
+});
+
+// Fecha o menu ao clicar em qualquer link
+document.querySelectorAll('.navbar__link').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', false);
+    });
 });
 
 // Sombra na navbar ao rolar
