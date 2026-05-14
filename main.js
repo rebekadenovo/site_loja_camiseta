@@ -1,0 +1,32 @@
+// Hamburger menu
+const toggle = document.querySelector('.navbar__toggle');
+const menu = document.querySelector('.navbar__menu');
+
+toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen);
+});
+
+// Fechar com Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', false);
+    }
+});
+
+// Sombra na navbar ao rolar
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+        header.classList.add('header--scrolled');
+    } else {
+        header.classList.remove('header--scrolled');
+    }
+});
+
+// Ano automático no footer
+const yearSpan = document.getElementById('footer-year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}

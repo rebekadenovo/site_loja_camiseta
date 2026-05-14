@@ -6,139 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebeka Araujo - Loja de Camisetas</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-<header class="header">
-    <h1 class="header__title">🛍️ Loja de Camisetas 🛍️</h1>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar" aria-label="Menu principal">
+            <a href="#" class="navbar__logo">🛍️ Loja de Camisetas</a>
 
-    <nav class="nav">
-        <a href="#" class="nav__link">Sobre a loja</a>
-        <a href="#produtos" class="nav__link">Produtos</a>
-        <a href="#contato" class="nav__link">Contato</a>
-    </nav>
-</header>
+            <button class="navbar__toggle" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-<main class="main">
+            <ul class="navbar__menu" id="nav-menu">
+                <li><a href="#" class="navbar__link">Sobre a loja</a></li>
+                <li><a href="#produtos" class="navbar__link">Produtos</a></li>
+                <li><a href="#contato" class="navbar__link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- PRODUTOS -->
-    <section id="produtos" class="section">
-        <h2 class="section__title">Produtos</h2>
+    <main class="main">
 
-        <div class="produtos">
+        <!-- PRODUTOS -->
+        <section id="produtos" class="section">
+            <h2 class="section__title">Produtos</h2>
 
-            <!-- CARD -->
-            <article class="card">
-                <img src="./img/camiseta-preta.webp" alt="Camiseta preta">
-                <h3>Camiseta Preta</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+            <div class="cards-grid">
 
-            <article class="card">
-                <img src="./img/camiseta-branca.webp" alt="Camiseta branca">
-                <h3>Camiseta Branca</h3>
-                <p class="preco">R$ 79,90</p>
-            </article>
+                <!-- Primeiro card tem classe extra card--featured -->
+                <article class="card card--featured">
+                    <img class="card__img" src="./img/camiseta-preta.webp" alt="Camiseta preta">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Preta — Destaque</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-marrom.webp" alt="Camiseta marrom">
-                <h3>Camiseta Marrom</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-branca.webp" alt="Camiseta branca">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Branca</h3>
+                        <p class="card__price">R$ 79,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-verde.webp" alt="Camiseta verde">
-                <h3>Camiseta Verde</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-marrom.webp" alt="Camiseta marrom">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Marrom</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-laranja.webp" alt="Camiseta laranja">
-                <h3>Camiseta Laranja</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-verde.webp" alt="Camiseta verde">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Verde</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-roxa.webp" alt="Camiseta roxa">
-                <h3>Camiseta Roxa</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-laranja.webp" alt="Camiseta laranja">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Laranja</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-vermelha.webp" alt="Camiseta vermelha">
-                <h3>Camiseta Vermelha</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-roxa.webp" alt="Camiseta roxa">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Roxa</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-rosa.webp" alt="Camiseta rosa">
-                <h3>Camiseta Rosa</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-vermelha.webp" alt="Camiseta vermelha">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Vermelha</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-cinza.webp" alt="Camiseta cinza">
-                <h3>Camiseta Cinza</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-rosa.webp" alt="Camiseta rosa">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Rosa</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="./img/camiseta-azul.webp" alt="Camiseta azul">
-                <h3>Camiseta Azul</h3>
-                <p class="preco">R$ 89,90</p>
-            </article>
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-cinza.webp" alt="Camiseta cinza">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Cinza</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
 
+                <article class="card">
+                    <img class="card__img" src="./img/camiseta-azul.webp" alt="Camiseta azul">
+                    <div class="card__body">
+                        <h3 class="card__title">Camiseta Azul</h3>
+                        <p class="card__price">R$ 89,90</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section id="contato" class="section">
+            <h2 class="section__title">Faça seu pedido</h2>
+
+            <form class="form">
+                <label>Nome:</label>
+                <input type="text" required>
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <label>Tamanho:</label>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                </select>
+
+                <label>Observações:</label>
+                <textarea></textarea>
+
+                <button class="btn">Finalizar Pedido</button>
+            </form>
+        </section>
+
+        <!-- VÍDEOS -->
+        <section class="section">
+            <h2 class="section__title">Sobre nossas camisetas</h2>
+
+            <video controls>
+                <source src="./videos/video1.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="./videos/video2.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div>
+                <h3 class="footer__title">🛍️ Loja de Camisetas</h3>
+                <p>Moda com qualidade e estilo para todos os gostos.</p>
+            </div>
+            <div>
+                <h3 class="footer__title">Links</h3>
+                <a href="#" class="footer__link">Sobre a loja</a>
+                <a href="#produtos" class="footer__link">Produtos</a>
+                <a href="#contato" class="footer__link">Contato</a>
+            </div>
+            <div>
+                <h3 class="footer__title">Contato</h3>
+                <p>contato@lojacamisetas.com</p>
+            </div>
         </div>
-    </section>
+        <div class="footer__bottom">
+            <p>© <span id="footer-year"></span> Rebeka Araujo</p>
+        </div>
+    </footer>
 
-    <!-- FORM -->
-    <section id="contato" class="section">
-        <h2 class="section__title">Faça seu pedido</h2>
-
-        <form class="form">
-
-            <label>Nome:</label>
-            <input type="text" required>
-
-            <label>Email:</label>
-            <input type="email" required>
-
-            <label>Tamanho:</label>
-            <select required>
-                <option value="">Selecione</option>
-                <option>P</option>
-                <option>M</option>
-                <option>G</option>
-            </select>
-
-            <label>Observações:</label>
-            <textarea></textarea>
-
-            <button class="btn">Finalizar Pedido</button>
-
-        </form>
-    </section>
-
-    <!-- VÍDEOS -->
-    <section class="section">
-        <h2 class="section__title">Sobre nossas camisetas</h2>
-
-        <video controls>
-            <source src="./videos/video1.mp4" type="video/mp4">
-        </video>
-
-        <video controls>
-            <source src="./videos/video2.mp4" type="video/mp4">
-        </video>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <p>© 2026 - Rebeka Araujo</p>
-</footer>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>

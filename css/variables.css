@@ -7,4 +7,18 @@
 
     --radius: 10px;
     --sombra: 0 4px 10px rgba(0,0,0,0.1);
+
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.2);
 }

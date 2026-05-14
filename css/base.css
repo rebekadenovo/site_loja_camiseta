@@ -1,11 +1,14 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: var(--font-body);
     background: var(--cor-principal);
     color: var(--cor-secundaria);
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
+    font-family: var(--font-heading);
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 section {
