@@ -27,6 +27,8 @@
 /* As 3 linhas — visíveis em TODOS os tamanhos */
 .navbar__toggle {
     display: flex;
+    min-height: 44px;
+    min-width: 44px; 
     background: none;
     border: none;
     cursor: pointer;
@@ -49,13 +51,14 @@
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 5%;
+    right: 5%;
     background: var(--cor-botao);
     flex-direction: column;
     padding: var(--space-4);
     gap: var(--space-4);
     box-shadow: var(--shadow-md);
-    border-radius: 0 0 var(--radius) var(--radius));
+    border-radius: 0 0 var(--radius) var(--radius);
     min-width: 200px;
 }
 
@@ -89,4 +92,23 @@
 .header--scrolled .navbar {
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+}
+
+
+@media (min-width: 768px) {
+    .navbar__toggle {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;          /* sempre visível */
+        position: static;       /* sai do absolute */
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        gap: var(--space-4);
+        min-width: unset;
+        border-radius: 0;
+    }
 }

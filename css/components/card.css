@@ -6,9 +6,11 @@
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
+@media (hover: hover) {
+    .card:hover {
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-4px);
+    }
 }
 
 .card__img {

@@ -38,3 +38,14 @@ const yearSpan = document.getElementById('footer-year');
 if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
 }
+
+// Demanda do cliente: indicador visual de navegação por teclado
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+        document.body.classList.add('using-keyboard');
+    }
+});
+
+document.addEventListener('mousedown', () => {
+    document.body.classList.remove('using-keyboard');
+});

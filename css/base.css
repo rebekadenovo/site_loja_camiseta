@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-body);
     background: var(--cor-principal);
@@ -18,4 +22,22 @@ section {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Toque mínimo em botões */
+button, .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* iOS zoom — esse fica aqui mesmo */
+input, select, textarea {
+    font-size: max(16px, 1rem);
+}
+
+/* Previne zoom automático no iOS — item 12 do checklist */
+input, select, textarea {
+    font-size: max(16px, 1rem);
 }
