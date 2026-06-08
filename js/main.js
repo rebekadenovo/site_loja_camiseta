@@ -12,6 +12,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && menu.classList.contains('is-open')) {
         menu.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', false);
+        toggle.focus();
     }
 });
 
