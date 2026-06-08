@@ -18,7 +18,7 @@
     --space-12: 3rem;
     --space-16: 4rem;
 
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-sm: 0 1px 3px rgba(52, 15, 15, 0.12);
     --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
     --shadow-lg: 0 8px 24px rgba(0,0,0,0.2);
 
@@ -34,17 +34,16 @@
     --leading-tight: 1.2;
     --leading-normal: 1.5;
 
-    /* Cores — checkpoint obrigatório */
+    /* Cores */
     --color-primary-100: #EBF3FB;
-    --color-primary-500: #2E75B6;
-    --color-primary-700: #1F4E79;
+    --color-primary-500: #ba0ef3;
+    --color-primary-700: #3a014d;
     --color-gray-50:  #F9FAFB;
     --color-gray-300: #D1D5DB;
     --color-gray-500: #6B7280;
     --color-gray-700: #374151;
     --color-gray-900: #111827;
 
-    /* Aliases semânticos */
     --color-text-primary:   var(--color-gray-900);
     --color-text-secondary: var(--color-gray-500);
     --color-bg-primary:     #FFFFFF;
