@@ -10,4 +10,5 @@
 @import url('./components/card.css') layer(components);
 @import url('./components/footer.css') layer(components);
 @import url('./components/form.css') layer(components);
+@import url('./components/lightbox.css') layer(components);
 @import url('./utilities.css') layer(utilities);

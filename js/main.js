@@ -50,3 +50,40 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('mousedown', () => {
     document.body.classList.remove('using-keyboard');
 });
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
+
+// Abre ao clicar em qualquer imagem de card
+document.querySelectorAll('.card__img').forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // trava o scroll
+        lightboxClose.focus(); // foco acessível
+    });
+});
+
+// Fecha pelo botão X
+lightboxClose.addEventListener('click', fecharLightbox);
+
+// Fecha clicando fora da imagem
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) fecharLightbox();
+});
+
+// Fecha com Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+        fecharLightbox();
+    }
+});
+
+function fecharLightbox() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = ''; // libera o scroll
+}

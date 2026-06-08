@@ -1,0 +1,63 @@
+/**
+ * @component Lightbox
+ * @description Modal de visualização de imagem em tamanho ampliado.
+ *
+ * @tokens-consumed
+ * --radius     Borda da imagem
+ * --shadow-lg  Sombra da imagem ampliada
+ *
+ * @states
+ * default          Oculto
+ * .is-open         Visível (adicionado via JS)
+ *
+ * @since Aula 12
+ */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-8);
+}
+
+.lightbox.is-open {
+    display: flex;
+}
+
+.lightbox__img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.lightbox__close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    background: white;
+    border: none;
+    border-radius: var(--radius);
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.lightbox__close:hover {
+    opacity: 0.75;
+}
+
+.lightbox__close:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 3px;
+}
